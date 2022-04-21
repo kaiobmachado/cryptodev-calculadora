@@ -1,0 +1,91 @@
+html{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #6B8E23;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #6B8E23;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.displayResultado{
+    padding-bottom: 2rem;
+    
+}
+
+.resultado{
+    font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    height: 1.7rem;
+    background-color: #BDB76B;
+    text-align: right;
+}
+
+.displayOperacao{
+    text-align: center;
+}
+
+.operacao{
+    font-size: .8rem;
+    font-family: 'Press Start 2P', cursive; 
+    height: 1.3rem;
+    background-color: #BDB76B;
+    text-align: right;
+}
+
+.entrada{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.numeros{
+    max-width: 250px;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.numero{
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #556B2F;
+}
+
+.numeroOP{
+    font-size: 1.3rem;
+    padding: 1rem;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #556B2F;
+}
+
+#C{
+    font-size: 1.5rem ;
+    background-color: #808000;
+    text-align: center;
+}
+
+
+.operadores{
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer{
+    
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+       <title>Calculadora</title>
+    </head>
+    <header>
+        <h1>Calculadora Responsiva</h1>
+        <div class="menu">
+            <input id="bmenu" type="checkbox">
+            <label class="menuContainer" for="bmenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
+    <body>
+
+        <main>
+            <div class="display">
+                <div class="displayResultado">
+                    <input class="resultado" type="text" placeholder="Resultado" >
+                </div>
+                <div class="displayOperacao">
+                    <input class="operacao" type="text" placeholder="Calculos" >
+                </div>
+            </div>
+            <div class="entrada">
+                <div class="numeros">
+                    
+                    <input class="numero" type="button" value="1" id="1">
+                    <input class="numero" type="button" value="2" id="2">
+                    <input class="numero" type="button" value="3" id="3">
+                    <input class="numero" type="button" value="4" id="4">
+                    <input class="numero" type="button" value="5" id="5">
+                    <input class="numero" type="button" value="6" id="6">
+                    <input class="numero" type="button" value="7" id="7">
+                    <input class="numero" type="button" value="8" id="8">
+                    <input class="numero" type="button" value="9" id="9">
+                    <input class="numero" type="button" value="0" id="0">
+                </div>
+                <div class="operadores">
+                    <input class="numeroOP" type="button" value="+" id="+">
+                    <input class="numeroOP" type="button" value="-" id="-">
+                    <input class="numeroOP" type="button" value="*" id="*">
+                    <input class="numeroOP" type="button" value="/" id="/">
+                    <input class="numeroOP" type="button" value="=" id="=">
+                    <input class="numeroOP" type="button" value="C" id="C">
+                </div>
+            </div>
+        </main>
+        <script type="module" href="calcula.js"></script>
+    </body>
+    <footer>
+        <a class="footer"> Kaio Machado - 2022</a>
+
+    </footer>
+</html>
