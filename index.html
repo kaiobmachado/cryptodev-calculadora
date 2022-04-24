@@ -24,37 +24,38 @@
         <main>
             <div class="display">
                 <div class="displayResultado">
-                    <input class="resultado" type="text" placeholder="Resultado" >
+                    <p class="resultado" type="text" placeholder="Resultado" id="resultado">Resultado</p>
                 </div>
                 <div class="displayOperacao">
-                    <input class="operacao" type="text" placeholder="Calculos" >
+                    <input class="operacao" type="text" placeholder="Calculos" id="operacao" >
                 </div>
             </div>
             <div class="entrada">
                 <div class="numeros">
-                    
-                    <input class="numero" type="button" value="1" id="1">
-                    <input class="numero" type="button" value="2" id="2">
-                    <input class="numero" type="button" value="3" id="3">
-                    <input class="numero" type="button" value="4" id="4">
-                    <input class="numero" type="button" value="5" id="5">
-                    <input class="numero" type="button" value="6" id="6">
-                    <input class="numero" type="button" value="7" id="7">
-                    <input class="numero" type="button" value="8" id="8">
-                    <input class="numero" type="button" value="9" id="9">
-                    <input class="numero" type="button" value="0" id="0">
+                    <button class="numero" type="submit" value="1" id="esconder" onclick= "escreveValores('11')" >1</button>
+                    <button class="numero" type="submit" value="1" id="1" onclick= "escreveValores('1')">1</button>
+                    <button class="numero" type="submit" value="2" id="2" onclick= "escreveValores('2')">2</button>
+                    <button class="numero" type="submit" value="3" id="3" onclick= "escreveValores('3')">3</button>
+                    <button class="numero" type="submit" value="4" id="4" onclick= "escreveValores('4')">4</button>
+                    <button class="numero" type="submit" value="5" id="5" onclick= "escreveValores('5')">5</button>
+                    <button class="numero" type="submit" value="6" id="6" onclick= "escreveValores('6')">6</button>
+                    <button class="numero" type="submit" value="7" id="7" onclick= "escreveValores('7')">7</button>
+                    <button class="numero" type="submit" value="8" id="8" onclick= "escreveValores('8')">8</button>
+                    <button class="numero" type="submit" value="9" id="9" onclick= "escreveValores('9')">9</button>
+                    <button class="numero" type="submit" value="0" id="0" onclick= "escreveValores('0')">0</button>
                 </div>
                 <div class="operadores">
-                    <input class="numeroOP" type="button" value="+" id="+">
-                    <input class="numeroOP" type="button" value="-" id="-">
-                    <input class="numeroOP" type="button" value="*" id="*">
-                    <input class="numeroOP" type="button" value="/" id="/">
-                    <input class="numeroOP" type="button" value="=" id="=">
-                    <input class="numeroOP" type="button" value="C" id="C">
+                    <button class="numeroOP" type="submit" value="+" id="soma" onclick= "escreveValores('+')">+</button>
+                    <button class="numeroOP" type="submit" value="-" id="subtrai" onclick= "escreveValores('-')">-</button>
+                    <button class="numeroOP" type="submit" value="*" id="multiplica" onclick= "escreveValores('*')">*</button>
+                    <button class="numeroOP" type="submit" value="/" id="divide" onclick= "escreveValores('/')">/</button>
+                    <button class="numeroOP" type="submit" value="=" id="result">=</button>
+                    <button class="numeroOP" type="submit" value="C" id="C" escreveValores("")>C</button>
                 </div>
             </div>
         </main>
-        <script type="module" href="calcula.js"></script>
+        <script type="text/javascript" src="calcula.js"></script>
+        
     </body>
     <footer>
         <a class="footer"> Kaio Machado - 2022</a>

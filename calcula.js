@@ -1,14 +1,35 @@
 
 
-
-var numeroInicial = 0;
-var operacao =  "null";
-var numeroFinal = 0 ; 
-var resultado = 0;
-
 function iniciaOperacao (){
-    document.querySelector(".displayOperacao")
+   var entrada = document.querySelector("#operacao").value;
+   var resultado = eval(entrada);
 
+   console.log (resultado);
+   document.getElementById("resultado").textContent = resultado
+  
 }
 
-console.log("resultado");
+function reseta (){
+    document.getElementById("resultado").textContent = ""
+    document.querySelector("#operacao").value = ""
+}
+
+function escreveValores (valor){
+    
+    var opera = document.querySelector("#operacao").value;
+    document.querySelector("#operacao").value = opera + valor;
+    
+}
+
+var calcula = document.querySelector("#result");
+calcula.onclick = iniciaOperacao;
+
+var resetaOp = document.querySelector("#C");
+resetaOp.onclick = reseta;
+
+
+var numero = document.querySelector(".numero");
+numero.onclick = escreveValores;
+
+var numeroOp = document.querySelector(".numeroop");
+numeroOp = escreveValores;
