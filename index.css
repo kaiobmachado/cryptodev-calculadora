@@ -3,11 +3,12 @@ html{
     background-color: #6B8E23;
 }
 
-header{
+.header{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: #6B8E23;
+    font-size: 1.4rem;
 }
 
 main{
@@ -27,9 +28,7 @@ main{
     height: 1.9rem;
     background-color: #BDB76B;
     text-align: right;
-    padding-top: .8rem;
-    
-    
+    padding-top: .8rem;  
     
 }
 
@@ -99,6 +98,197 @@ main{
 }
 
 footer{
-    
     text-align: center;
+}
+
+/* Burguer menu */
+
+.topNav{
+	height: 2.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+
+#checkbox-menu{
+	position: absolute;
+	opacity: 0;
+}
+
+label{
+	cursor: pointer;
+	position: relative;
+	display: block;
+	height: 1.4rem;
+	width: 1.9rem;
+}
+
+label span{
+	position: absolute;
+	display: block;
+	height: .3rem;
+	width: 100%;
+	border-radius: 1.4rem;
+	background: black;
+	transition: 0.25s ease-in-out;
+}
+
+.menu-button-container span:nth-child(1){
+	top: 0;
+}
+
+.menu-button-container span:nth-child(2){
+	top: .5rem;
+}
+
+.menu-button-container span:nth-child(3){
+	top: 1rem;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+	transform: rotate(-45deg);
+	top: .5rem;
+
+}
+#checkbox-menu:checked + label span:nth-child(2){
+	opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+	transform: rotate(45deg);
+	top: .5rem;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 400px){
+
+
+    .header{
+        justify-content: space-around;
+        padding: 1.8rem;
+        font-size: 1.6rem;
+    }
+
+    .display{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .displayResultado{
+        padding-bottom: 2rem;
+        width: 22rem;
+        
+    }
+
+    .resultado{
+        font-size: 1.3rem;
+        height: 2.5rem;
+        padding-top: 1.2rem;  
+        
+    }
+
+  
+    .operacao{
+        font-size: 1.5rem;
+        height: 2rem;
+        max-width: 20rem;
+               
+    }
+    .entrada{
+        padding: 2rem;
+   
+    }
+    
+    .numeros{
+        max-width: 20rem;
+        padding-bottom: 1.3rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    
+    .numero{
+        font-size: 2.6rem;
+        padding: 1.3rem;
+        margin-top: 1.3rem;
+    }
+    
+    
+    .numeroOP{
+        font-size: 1.2rem;
+        padding: 1.3rem;
+        margin-top: 1rem;
+    }
+    
+    #C{
+        font-size: 1.5rem;
+    }
+    
+    
+    .operadores{
+        max-width: 19rem;
+    
+    }
+   
+
+}
+
+@media screen and (min-width: 768px){
+
+    header{
+        align-items: center;
+        
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        padding-bottom: 1rem;
+    }
+   
+}
+
+@media screen and (min-width: 1023px){
+
+    
+    main{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+       justify-content: center;
+    }
+
+    .display{
+        padding-bottom: 10rem;
+        padding-left: 2rem;
+
+    }
+    .entrada{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .numeros{
+        max-width: 16rem;
+        padding-right: 2rem;
+    }
+    .numero{
+        font-size: 1.4rem;
+    }
+
+    .operadores{
+        max-width: 10rem;
+        padding-bottom: 6.2rem;
+    }
+
+
 }

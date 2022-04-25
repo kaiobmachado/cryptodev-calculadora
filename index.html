@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <link rel="stylesheet" type="text/css" href="reset.css">
         <link rel="stylesheet" type="text/css" href="index.css">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway&display=swap" rel="stylesheet">
@@ -9,14 +10,17 @@
        <title>Calculadora</title>
     </head>
     <header>
-        <h1>Calculadora Responsiva</h1>
-        <div class="menu">
-            <input id="bmenu" type="checkbox">
-            <label class="menuContainer" for="bmenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <div class="header">
+            <h1>Calculadora Responsiva</h1>
+            <section class="topNav">
+                    <input id="checkbox-menu" type="checkbox" />
+                    <label class='menu-button-container' for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>		
+            </section>
         </div>
     </header>
     <body>
@@ -27,7 +31,7 @@
                     <p class="resultado" type="text" placeholder="Resultado" id="resultado">Resultado</p>
                 </div>
                 <div class="displayOperacao">
-                    <input class="operacao" type="text" placeholder="Calculos" id="operacao" >
+                    <input class="operacao" type="text" placeholder="Calculos" id="operacao">
                 </div>
             </div>
             <div class="entrada">
@@ -47,10 +51,10 @@
                 <div class="operadores">
                     <button class="numeroOP" type="submit" value="+" id="soma" onclick= "escreveValores('+')">+</button>
                     <button class="numeroOP" type="submit" value="-" id="subtrai" onclick= "escreveValores('-')">-</button>
-                    <button class="numeroOP" type="submit" value="*" id="multiplica" onclick= "escreveValores('*')">*</button>
-                    <button class="numeroOP" type="submit" value="/" id="divide" onclick= "escreveValores('/')">/</button>
+                    <button class="numeroOP" type="submit" value="*" id="multiplica" onclick= "escreveValores('*')">X</button>
+                    <button class="numeroOP" type="submit" value="/" id="divide" onclick= "escreveValores('/')">&divide</button>
                     <button class="numeroOP" type="submit" value="=" id="result">=</button>
-                    <button class="numeroOP" type="submit" value="C" id="C" escreveValores("")>C</button>
+                    <button class="numeroOP" type="submit" value="C" id="C">C</button>
                 </div>
             </div>
         </main>
@@ -58,7 +62,7 @@
         
     </body>
     <footer>
-        <a class="footer"> Kaio Machado - 2022</a>
+        <a class="footer"> Kaio Machado&copy - 2022</a>
 
     </footer>
 </html>

@@ -1,17 +1,17 @@
 
 
 function iniciaOperacao (){
-   var entrada = document.querySelector("#operacao").value;
+   var entrada = document.querySelector("#operacao").value
    var resultado = eval(entrada);
 
    console.log (resultado);
-   document.getElementById("resultado").textContent = resultado
+   document.getElementById("resultado").textContent = resultado;
   
 }
 
 function reseta (){
-    document.getElementById("resultado").textContent = ""
-    document.querySelector("#operacao").value = ""
+    document.getElementById("resultado").textContent = "Resultado";
+    document.querySelector("#operacao").value = "";
 }
 
 function escreveValores (valor){
@@ -33,3 +33,4 @@ numero.onclick = escreveValores;
 
 var numeroOp = document.querySelector(".numeroop");
 numeroOp = escreveValores;
+
