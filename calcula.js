@@ -1,4 +1,7 @@
 
+var entrada
+var validador
+var expressaoRegular = RegExp(/(\d+[\+\/\-\*]{1}\d+)+/)
 
 function iniciaOperacao (){
    var entrada = document.querySelector("#operacao").value
@@ -7,6 +10,18 @@ function iniciaOperacao (){
    console.log (resultado);
    document.getElementById("resultado").textContent = resultado;
   
+}
+
+function validaOperacao(validador){
+    var validador = document.querySelector("#operacao").value
+    re = expressaoRegular.test(validador)
+    console.log (re)
+    if (!re){
+        document.getElementById("resultado").textContent = "Digite apenas Operações";
+    }else{
+      iniciaOperacao()
+    }
+
 }
 
 function reseta (){
@@ -22,7 +37,7 @@ function escreveValores (valor){
 }
 
 var calcula = document.querySelector("#result");
-calcula.onclick = iniciaOperacao;
+calcula.onclick = validaOperacao;
 
 var resetaOp = document.querySelector("#C");
 resetaOp.onclick = reseta;
